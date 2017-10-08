@@ -1,0 +1,274 @@
+.header{
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    transition: .6s;
+    height: 70px;
+    z-index: 242; 
+}
+.nav-xl{
+    background: rgba(0,0,0,0.7);
+}
+.nav-ele{
+    display: inline-block;
+}
+.left-name{
+    position: relative;
+    top: 8px;
+    left:25px;
+}
+.right-name{
+    position: relative;
+    float: right;
+    font-family: 'Roboto',verdana;
+    font-weight: 300;
+    font-size: 2.2rem;
+    right:20px;
+    top: 10px;
+    border: 2px solid #e67e22;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: .3s;
+    z-index: 1;
+    color: #e67e22;
+}
+.right-name a{
+     color: #e67e22;
+}
+.right-name:after{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background: #e67e22;
+    border: none;
+    z-index: -1;
+    transition: .3s;
+    border-radius: 10px;
+
+
+}
+.right-name:hover:after{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+
+}
+
+.right-name:hover a{
+    text-decoration: none;
+    color: white;
+}
+.right-name:hover{
+    border: 2px solid transparent;
+
+}
+.main{
+    position: relative;
+    top: -60px;
+   
+    padding-top: 300px;
+    padding-bottom: 300px;
+    font-family: 'Roboto', verdana;
+    background-image: url('main.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+    z-index: 1;
+    color: white;
+
+}
+.main:after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background: #000;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.main h1{
+    font-size: 10rem;
+    font-weight: 500;
+}
+.main p{
+    font-size: 3rem;
+    font-weight: 200;
+}
+.orange{
+    color: #e67e22;
+    font-weight: 500;
+}
+.typed{
+    color: #e67e22;
+    font-weight: 200;
+    font-size: 10rem;
+
+}
+.about{
+    display: flex;
+    font-family: 'Roboto',verdana;
+
+}
+@media all and (max-width:1000px) {
+    .about {
+        flex-direction: column
+    }
+}
+.about-image{
+    flex:3;
+    padding: 50px;
+}
+.about-image img{
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ transition: .3s;
+ border-radius: 20px;
+  transform: rotateY(0deg) rotateZ(-1deg);
+  transform-style: preserve-3d;
+
+}
+.about-text{
+    padding: 50px;
+    flex: 4;
+}
+
+.about-image img:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.about h1{
+    font-weight: 300;
+    font-size: 5rem;
+}
+.about p{
+    font-weight: 500;
+}
+.team{
+    padding-top: 200px;
+    font-family: 'Roboto',verdana;
+    background: #e0e0e0;
+    padding-bottom: 150px;
+}
+.team h1{
+    font-size: 6rem;
+      font-weight: 300;
+      padding-bottom: 70px;
+
+}
+.rwo-team{
+    display: inline-block;
+}
+.cell-name{
+    position: relative;
+    background: #e67e22;
+    color: white;
+    width: 250px;
+    padding: 5px;
+    display: inline-block;
+    margin: 10px;
+    transition: .3s;
+    z-index: 1;
+}
+.cell-name:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    opacity: 0;
+    z-index: -1;
+    transition: .3s;
+    background: #fff;
+}
+.cell-name:hover:after{
+    width: 100%;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+.cell-name:hover{
+   color: #e67e22;
+    cursor:pointer;
+}
+.team-name{
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding-top:8px;
+}
+.person-name{
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.member{
+    height: 0;
+    overflow: hidden;
+}
+.member-open{
+    height: auto;
+}
+.member-btn{
+    padding: 10px;
+    background: #2ecc71;
+    border: none;
+    color: white;
+    transition: .3s;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: 'Roboto',verdana;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.member-btn:hover{
+    width: 220px;
+}
+.member-btn:focus{
+    outline: none;
+}
+.alumni{
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 60%;
+    height: 0;
+    overflow: hidden;
+}
+.alumni-open{
+    height: auto;
+}
+.alumni-btn{
+    padding: 10px;
+    background: #2ecc71;
+    border: none;
+    color: white;
+    transition: .3s;
+    width: 200px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-family: 'Roboto',verdana;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.alumni-btn:hover{
+    width: 220px;
+}
+.alumni-btn:focus{
+    outline: none;
+}
+.footer{
+    padding: 50px;
+    color: white;
+    font-family: "Roboto",verdana;
+    font-weight: 300;
+    font-size: 2rem;
+    background: #34495e;
+}
